@@ -13,7 +13,7 @@ import Nav from './components/Nav';
 
 //Import Provider from react-redux as well as our store
 import { Provider } from 'react-redux';
-import store from './store';
+import store from './utils/store';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
