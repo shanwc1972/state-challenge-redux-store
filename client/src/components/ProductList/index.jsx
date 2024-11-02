@@ -15,8 +15,9 @@ function ProductList() {
   //const [state, dispatch] = useStoreContext();
   //Employ our useSelector and useDispatch hooks  
   const dispatch = useDispatch();
-  const state = useSelector((state => state));
-  const { currentCategory } = state;
+  const products = useSelector((state) => state.products);
+  const currentCategory = useSelector((state) => state.currentCategory);
+  //const { currentCategory } = state;
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
@@ -41,10 +42,10 @@ function ProductList() {
 
   function filterProducts() {
     if (!currentCategory) {
-      return state.products;
+      return products;
     }
 
-    return state.products.filter(
+    return products.filter(
       (product) => product.category._id === currentCategory
     );
   }
@@ -52,7 +53,7 @@ function ProductList() {
   return (
     <div className="my-2">
       <h2>Our Products:</h2>
-      {state.products.length ? (
+      {products.length ? (
         <div className="flex-row">
           {filterProducts().map((product) => (
             <ProductItem
