@@ -9,8 +9,6 @@ import { setContext } from '@apollo/client/link/context';
 
 import Nav from './components/Nav';
 
-//import { StoreProvider } from './utils/GlobalState';
-
 //Import Provider from react-redux as well as our store
 import { Provider } from 'react-redux';
 import store from './utils/store';

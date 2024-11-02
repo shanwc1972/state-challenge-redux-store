@@ -6,7 +6,6 @@ import { idbPromise } from '../../utils/helpers';
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 
-//import { useStoreContext } from '../../utils/GlobalState';
 //import useSelector and useDispatch hooks from react-redux
 import { useSelector, useDispatch } from 'react-redux';
 
