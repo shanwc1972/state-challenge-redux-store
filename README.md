@@ -17,6 +17,7 @@ The application / page can be accessed at: https://state-challenge-redux-store.o
 
 The following image shows the application's appearance and functionality:
 
+![Screenshot 2024-11-03 at 11 03 37 am](https://github.com/user-attachments/assets/5c055110-62d3-4a7b-b425-2adda307f0b3)
 
 
 By default, a list of categories and products is displayed. You can click on a category to filter the products shown. By default, the application displays all categories.
@@ -36,18 +37,18 @@ As this application employs a GraphQL API, use of a GraphQL API developer tool, 
 
 Queries:  
 `categories: [Category]`  - to provide an array of categories  
-`checkout([productIDs])`  - to provide an array of products in your shopping cart
-`order(OrderId): Order` - to query a list of product and purchase dates for a given order Id
-`product(ProudctId): Product`  - to query details for a given product ID
+`checkout([productIDs])`  - to provide an array of products in your shopping cart  
+`order(OrderId): Order` - to query a list of product and purchase dates for a given order Id  
+`product(ProudctId): Product`  - to query details for a given product ID  
 `Products(CategoryId, name): [Product]` - to query a list of products for a given catefgory Id  
-`user: User` - to query the logged on user
+`user: User` - to query the logged on user  
 
 Mutations:  
-`addOrder([products]): Order`  - creates an order given an array of products 
-`addUser(firstanme, lastname, email, password): Auth` - creates a new user given a name, email and password 
-`logon(email): Auth` - logs in a user given their email 
+`addOrder([products]): Order`  - creates an order given an array of products  
+`addUser(firstanme, lastname, email, password): Auth` - creates a new user given a name, email and password  
+`logon(email): Auth` - logs in a user given their email  
 `updateProdict(productId, quantity): Product`  - updates a product given an ID and quantity  
-`updateUser(firstname, lastname, email, password): user`  - updates a user given a name, email and password 
+`updateUser(firstname, lastname, email, password): user`  - updates a user given a name, email and password  
  
 
 ## Contributing
